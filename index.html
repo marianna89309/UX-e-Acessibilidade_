@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital para Idosos</title>
+    <style>
+        :root {
+            --primaria: #003366;
+            --secundaria: #ffcc00;
+            --perigo: #cc0000;
+            --texto: #1a1a1a;
+            --fundo: #ffffff;
+            --fundo-cartao: #f0f4f8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 22px;
+            /* Fonte aumentada para leitura */
+            line-height: 1.5;
+            color: var(--texto);
+            background-color: var(--fundo);
+        }
+
+        /* 1. Início: Banner com Botão de Ajuda */
+        .banner {
+            background-color: var(--primaria);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 10px solid var(--secundaria);
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .botao-ajuda {
+            display: inline-block;
+            background-color: var(--perigo);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s;
+        }
+
+        .botao-ajuda:active {
+            transform: scale(0.95);
+        }
+
+        .recipiente {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: var(--primaria);
+            border-bottom: 4px solid var(--secundaria);
+            margin: 40px 0 20px;
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        /* 2. Dicas Importantes */
+        .grade-dicas {
+            display: grid;
+            gap: 20px;
+        }
+
+        .cartao-dica {
+            background: var(--fundo-cartao);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 15px solid var(--primaria);
+        }
+
+        .cartao-dica strong {
+            display: block;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--primaria);
+        }
+
+        /* 3. Direitos na Internet */
+        .caixa-direitos {
+            background-color: #fff9e6;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px dashed var(--primaria);
+        }
+
+        .caixa-direitos p {
+            margin-bottom: 15px;
+        }
+
+        /* 4. Como saber se estou caindo em um golpe? */
+        .alerta-golpe {
+            list-style: none;
+        }
+
+        .alerta-golpe li {
+            background: #ffe6e6;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .alerta-golpe li::before {
+            content: "⚠️";
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        rodape {
+            display: block;
+            background: var(--primaria);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 50px;
+        }
+
+        /* Ajustes para Celular */
+        @media (max-width: 600px) {
+            body {
+                font-size: 20px;
+            }
+
+            .banner h1 {
+                font-size: 1.8rem;
+            }
+
+            .botao-ajuda {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        /* Rolagem suave para o botão funcionar elegantemente */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1. INÍCIO -->
+    <section class="banner">
+        <h1>Guia de Segurança Digital</h1>
+        <p style="margin-bottom: 30px;">Proteja-se e navegue com tranquilidade.</p>
+        <a href="#contato-ajuda" class="botao-ajuda">PRECISO DE AJUDA AGORA</a>
+    </section>
+
+    <div class="recipiente">
+
+        <!-- 2. DICAS IMPORTANTES -->
+        <section id="dicas">
+            <h2>Dicas Importantes</h2>
+            <div class="grade-dicas">
+                <div class="cartao-dica">
+                    <strong>1. Use senhas longas</strong>
+                    Prefira frases que você gosta em vez de apenas números. Exemplo: "EuAmoMinhaFamilia2024!".
+                </div>
+                <div class="cartao-dica">
+                    <strong>2. Desconfie de urgência</strong>
+                    Se alguém pedir dinheiro rápido dizendo que é emergência, pare e ligue para a pessoa antes.
+                </div>
+                <div class="cartao-dica">
+                    <strong>3. Não clique em tudo</strong>
+                    Links que prometem prêmios ou dinheiro fácil geralmente são armadilhas.
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DIREITOS NA INTERNET -->
+        <section id="direitos">
+            <h2>Direitos na Internet</h2>
+            <div class="caixa-direitos">
+                <p>Você sabia que no Brasil existe o <strong>Marco Civil da Internet</strong> e a <strong>LGPD</strong>?
+                    Essas leis garantem que você tenha direitos básicos no mundo digital:</p>
+                <ul>
+                    <li><strong>Privacidade:</strong> Suas conversas e dados pessoais não podem ser expostos sem sua
+                        permissão.</li>
+                    <li><strong>Liberdade de Expressão:</strong> Você tem o direito de se manifestar, desde que não
+                        ofenda ninguém.</li>
+                    <li><strong>Proteção de Dados:</strong> Empresas devem cuidar bem das suas informações (nome, CPF,
+                        endereço).</li>
+                    <li><strong>Direito ao Esquecimento:</strong> Em alguns casos, você pode pedir que informações
+                        antigas sobre você sejam removidas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 4. COMO SABER SE ESTOU CAINDO EM UM GOLPE? -->
+        <section id="golpes">
+            <h2>Sinais de um Golpe</h2>
+            <p style="margin-bottom: 20px;">Fique atento a estas atitudes suspeitas:</p>
+            <ul class="alerta-golpe">
+                <li><strong>Pedido de segredo:</strong> O golpista pede para você não contar para ninguém sobre a
+                    conversa ou a transação.</li>
+                <li><strong>Erros de português:</strong> Mensagens de bancos ou empresas famosas com muitos erros de
+                    escrita são sinais claros de fraude.</li>
+                <li><strong>Falso funcionário:</strong> Pessoas que ligam dizendo ser do banco e pedem para você
+                    confirmar sua senha ou entregar o cartão.</li>
+                <li><strong>Número desconhecido com foto de conhecido:</strong> Alguém usa a foto de um parente seu e
+                    diz: "Mudei meu número, me faz um PIX?".</li>
+            </ul>
+        </section>
+
+        <!-- SEÇÃO DE DESTINO DO BOTÃO DE AJUDA -->
+        <section id="contato-ajuda" style="margin-top: 60px; padding: 20px; background: #eef;" class="caixa-direitos">
+            <h2 style="margin-top: 0;">O que fazer agora?</h2>
+            <p>Se você acha que caiu em um golpe ou está com medo de uma mensagem:</p>
+            <ol>
+                <li><strong>Pare tudo o que está fazendo.</strong></li>
+                <li><strong>Ligue para um filho, neto ou amigo próximo.</strong></li>
+                <li><strong>Ligue para o seu banco</strong> usando o número que está atrás do seu cartão.</li>
+                <li><strong>Registre um Boletim de Ocorrência</strong> na delegacia mais próxima ou pela internet.</li>
+            </ol>
+        </section>
+
+    </div>
+
+    <rodape>
+        <p><strong>Segurança Digital para a Melhor Idade</strong></p>
+        <p>Este guia é informativo. Nunca compartilhe sua senha com estranhos.</p>
+    </rodape>
+
+</body>
+
+</html>
